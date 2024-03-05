@@ -49,21 +49,3 @@ c. Lasso Regression
 
 d. Random Forest Regressor
 
-# Conclusion
-The main goal of the project is to create a machine learning model which can predict the closing price of AMRN stock, keeping in mind of the opening, closing, high price and similar features.
-
-I have developed 4 models Linear-regression, Ridge_Regression, Lasso_regression and Random_forest.
-Random_forest model shows promising result with mse score of 0.0240 overall, therefore it can be used to solve this problem. It also considering all new added features and taking care of multicollinearity.
-
-Using data visualization on our target variable, we can clearly see the stock price behaviour over the months and something happens in the month of Oct 2023 in which the hitted bottom.
-
-We found that the distribution of all our variables is approximately normal but volume is positively skewed. so we performed log transformation on them to come on common scaling.
-
-I considered to take mean of Open, High and Low faetures.Additional features were engineered by taking lags to capture the temporal trends and patterns.
-
-
-The dataset has only daily related prices for a year, 5 to 10-year data would be more accurate as model can analyze important patterns like week opening price and weekend price. Volume of the data if provided can also be useful in making prediction. A stock prediction involved many aspects like holidays, political decisions, events, un precedented disasters, human decisions. This can be better predicted by having all these features and using time series models like ARIMA and LSTM can ve predicted more accurately.
-
-Given the dataset and features, Our model is performing well on all data-points.
-With our model making predictions with such high accuracy, we can confidently deploy this model for further predictive tasks using future data.
-
